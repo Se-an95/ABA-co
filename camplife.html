@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylescamp.css">
+    <script src="script.js"></script>
+    <title>Camp-Life</title>
+</head>
+<body>
+    <header>
+		<h1><a href="index.html">Camping Life</a></h1>
+		<nav>
+			<ul>
+				<li><a href="#previous-camps">Previous Camps</a></li>
+				<li><a href="#newsletter">Newsletter</a></li>
+				<li><a href="#registration">Registration</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <main>
+        <section id="previous-camps">
+            <h2>Previous Camps</h2>
+            <p>Here are some pictures from our previous camping trips:</p>
+            <div class="gallery">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="CampPhotos/camp1.jpeg" alt="Camp 1">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="CampPhotos/camp2.jpeg" alt="Camp 2">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="CampPhotos/camp3.jpeg" alt="Camp 3">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="CampPhotos/camp4.jpeg" alt="Camp 4">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="CampPhotos/camp5.jpeg" alt="Camp 5">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="CampPhotos/camp6.jpeg" alt="Camp 6">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="CampPhotos/camp7.jpeg" alt="Camp 7">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="CampPhotos/camp8.jpeg" alt="Camp 8">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="CampPhotos/camp9.jpeg" alt="Camp 9">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="CampPhotos/camp10.jpg" alt="Camp 10">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </section>        
+
+        <section id="newsletter">
+            <h2>Newsletter</h2>
+            <p>Subscribe to our newsletter to receive updates on upcoming camping trips:</p>
+            <form action="newsletter.php" method="POST" title="Subscribe to our newsletter">
+                <label for="name" aria-label="Enter your name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+                <label for="email" aria-label="Enter your email address">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+                <input type="submit" value="Subscribe">
+            </form>            
+        </section>
+        
+        <section id="registration">
+            <h2>Registration</h2>
+            <p>Register now for our upcoming camping trip in June:</p>
+            <form action="registration.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="camping-equipment">Do you have your own camping equipment?</label>
+                <select id="camping-equipment" name="camping-equipment">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <label for="num-people">Number of people:</label>
+                <input type="number" id="num-people" name="num-people" min="1" max="10" required>
+                <input type="submit" value="Register">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-col">
+            <h4>About Us</h4>
+            <p>ABA presents all Camping,fun and games.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul class="contact-list">
+              <li><i class="fa fa-map-marker"></i>123 Main St, Johannesburg South Africa</li>
+              <li><i class="fa fa-phone"></i><a href="tel:+27617218703">+27 61 721 8703</a></li>
+              <li><i class="fa fa-envelope"></i><a href="mailto:aba&co@gmail.com">aba&co@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <ul class="social-list">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <form class="newsletter-form" action="#">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 ABA &amp; Co. All rights reserved.</p>
+          <script src="script.js"></script>
+        </div>
+      </footer> 
+</body>
+</html>

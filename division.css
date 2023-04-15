@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto'sans-serif;
+    line-height: 1.5;
+	background-image: url("background.jpg");
+	background-size: cover;
+    margin: 0%;
+    padding: 0%;
+}
+.logo-image {
+	width: 80px;
+	height: 80px;
+  }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header styles */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: burlywood;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*MAin*/
+main {
+	margin: 2rem;
+}
+
+.division {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: orange;
+	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.division h2 {
+	margin-top: 0;
+}
+
+  /*Footer styles*/
+  footer {
+    background-color: transparent;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-col {
+    width: calc(25% - 20px);
+    margin: 20px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col p,
+  .contact-list li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .contact-list li i {
+    margin-right: 10px;
+  }
+  
+  .social-list li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-list li a {
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-list li a:hover {
+    transform: scale(1.2);
+  }
+  
+  .newsletter-form {
+    display: flex;
+  }
+  
+  .newsletter-form input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+  }
+  
+  .newsletter-form button[type="submit"] {
+    width: 30%;
+    padding: 10px;
+    background-color: #fff;
+    color: #222;
+    border-radius: 0%;
+  }
